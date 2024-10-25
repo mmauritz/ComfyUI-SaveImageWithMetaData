@@ -101,6 +101,8 @@ class Capture:
                 return pnginfo_dict[key]  # Return the value that was set
             return ""  # Return an empty string if no value was set
 
+        lora_strings = []
+        lora_hashes_string = ""
         if save_prompt:
             positive_prompt = ""
             positive_prompt += update_pnginfo_dict(inputs_before_sampler_node, MetaField.POSITIVE_PROMPT, "Positive prompt")
